@@ -4,216 +4,218 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Color(0xFFFBD0D0),
-        body: Center(
-          child: Container(
-            height: 400,
-            width: 300,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.all(
-                Radius.circular(25),
-              ),
-            ),
-            child: Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 20),
-                  child: Container(
-                    height: 100,
-                    width: 100,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      border: Border.all(
-                        color: Color(0xFFA6ADD2),
-                      ),
-                    ),
-                    child: Column(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(top: 15, bottom: 5),
-                          child: Icon(
-                            size: 45,
-                            Icons.image_outlined,
-                            color: Color(0xFF1B255A),
-                          ),
-                        ),
-                        Text(
-                          "BASIC",
-                          style: TextStyle(
-                            letterSpacing: 2,
-                            color: Color(0xFF1B255A),
-                            fontFamily: "Poppins",
-                            fontWeight: FontWeight.w700,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(10),
+      home: SafeArea(
+        child: Scaffold(
+          backgroundColor: Color(0xFFFBD0D0),
+          body: Column(
+            children: [
+              Center(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 25),
                   child: RichText(
+                    textAlign: TextAlign.center,
                     text: TextSpan(
-                      text: "KR",
+                      text: "Search educational \nresources",
                       style: TextStyle(
-                        fontFamily: "Poppins",
-                        fontWeight: FontWeight.w500,
-                        color: Color(0xFF1B255A),
+                        fontSize: 30,
+                        fontFamily: "Mulish",
+                        color: Color(0xFF1D2144),
                       ),
-                      children: [
-                        TextSpan(
-                          text: " 199",
-                          style: TextStyle(
-                            fontSize: 30,
-                            fontFamily: "Poppins",
-                            fontWeight: FontWeight.w700,
-                          ),
-                        ),
-                        TextSpan(
-                          text: "\nNOK/MONTH",
-                        )
-                      ],
                     ),
                   ),
                 ),
-                Column(
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 50),
+                child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Container(
-                      width: 240,
-                      height: 60,
-                      child: Row(
-                        children: [
-                          Expanded(
-                            flex: 1,
-                            child: Container(
-                              margin: EdgeInsets.all(5),
-                              decoration: BoxDecoration(
-                                border: Border.all(color: Color(0xFFD2D9F3)),
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(20),
-                                ),
-                              ),
-                              child: Center(
-                                child: Text(
-                                  "10",
-                                  style: TextStyle(
-                                    fontSize: 18,
-                                    color: Color(0xFF1B255A),
-                                    fontFamily: "Poppins",
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                              ),
-                            ),
+                    Padding(
+                      padding: const EdgeInsets.all(5),
+                      child: Container(
+                        height: 30,
+                        width: 30,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.white,
+                          border: Border.all(
+                            width: 2,
+                            color: Color(0xFFD5DDF7),
                           ),
-                          Expanded(
-                            flex: 1,
-                            child: Container(
-                              margin: EdgeInsets.all(5),
-                              decoration: BoxDecoration(
-                                color: Color(0xFF1B255A),
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(20),
-                                ),
-                              ),
-                              child: Center(
-                                child: Text(
-                                  "25",
-                                  style: TextStyle(
-                                    fontSize: 18,
-                                    color: Colors.white,
-                                    fontFamily: "Poppins",
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            flex: 1,
-                            child: Container(
-                              margin: EdgeInsets.all(5),
-                              decoration: BoxDecoration(
-                                border: Border.all(color: Color(0xFFD2D9F3)),
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(20),
-                                ),
-                              ),
-                              child: Center(
-                                child: Text(
-                                  "50",
-                                  style: TextStyle(
-                                    fontSize: 18,
-                                    color: Color(0xFF1B255A),
-                                    fontFamily: "Poppins",
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            flex: 1,
-                            child: Container(
-                              margin: EdgeInsets.all(5),
-                              decoration: BoxDecoration(
-                                border: Border.all(color: Color(0xFFD2D9F3)),
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(20),
-                                ),
-                              ),
-                              child: Center(
-                                child: Text(
-                                  "100",
-                                  style: TextStyle(
-                                    fontSize: 18,
-                                    color: Color(0xFF1B255A),
-                                    fontFamily: "Poppins",
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
+                        ),
+                        child: Icon(
+                          Icons.chevron_left,
+                          color: Color(0xFf757BB1),
+                        ),
                       ),
                     ),
-                    Text(
-                      "Downloads per months",
-                      style: TextStyle(
-                        color: Color(0xFF1B255A),
-                        fontFamily: "Poppins",
-                        fontWeight: FontWeight.w500,
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: RotatedBox(
+                        quarterTurns: 3,
+                        child: Container(
+                          height: 100,
+                          width: 300,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(15),
+                            ),
+                          ),
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(15),
+                                child: Container(
+                                  height: 60,
+                                  width: 60,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFFF4F7FF),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(15),
+                                    ),
+                                  ),
+                                  child: Icon(Icons.search),
+                                ),
+                              ),
+                              RichText(
+                                text: TextSpan(
+                                  text: "Search forum",
+                                  style: TextStyle(
+                                    fontFamily: "Mulish",
+                                    color: Color(0xFF1D2144),
+                                  ),
+                                  children: [
+                                    TextSpan(
+                                      text:
+                                          "\nShare suggestions,ask questions, and \nconnect with other users ant top \ncontributors in the Search community \nforum.",
+                                      style: TextStyle(
+                                        fontSize: 7,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: RotatedBox(
+                        quarterTurns: 3,
+                        child: Container(
+                          height: 100,
+                          width: 300,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(15),
+                            ),
+                          ),
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(15),
+                                child: Container(
+                                  height: 60,
+                                  width: 60,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFFF4F7FF),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(15),
+                                    ),
+                                  ),
+                                  child: Icon(Icons.settings),
+                                ),
+                              ),
+                              RichText(
+                                text: TextSpan(
+                                  text: "Inside app",
+                                  style: TextStyle(
+                                    fontFamily: "Mulish",
+                                    color: Color(0xFF1D2144),
+                                  ),
+                                  children: [
+                                    TextSpan(
+                                      text:
+                                          "\nGet most out with the latest\nadditions to settings.",
+                                      style: TextStyle(
+                                        fontSize: 7,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ), Padding(
+                      padding: const EdgeInsets.all(5),
+                      child: Container(
+                        height: 30,
+                        width: 30,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.white,
+                          border: Border.all(
+                            width: 2,
+                            color: Color(0xFFD5DDF7),
+                          ),
+                        ),
+                        child: Icon(
+                          Icons.chevron_right,
+                          color: Color(0xFf757BB1),
+                        ),
                       ),
                     ),
                   ],
                 ),
-                Container(
-                  margin: EdgeInsets.only(top: 30),
-                  height: 60,
-                  width: 250,
-                  decoration: BoxDecoration(
-                    color: Color(0xFF1B255A),
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(15),
-                    ),
-                  ),
-                  child: Center(
-                    child: Text(
-                      "Subscribe",
-                      style: TextStyle(
-                        fontSize: 15,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(5),
+                    child: Container(
+                      height: 15,
+                      width: 15,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
                         color: Colors.white,
-                        fontFamily: "Poppins",
-                        fontWeight: FontWeight.w500,
+                        border: Border.all(
+                          width: 3.5,
+                          color: Color(0xFFD5DDF7),
+                        ),
                       ),
                     ),
                   ),
-                ),
-              ],
-            ),
+                  Padding(
+                    padding: const EdgeInsets.all(5),
+                    child: Container(
+                      height: 15,
+                      width: 15,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Color(0xFFD5DDF7),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(5),
+                    child: Container(
+                      height: 15,
+                      width: 15,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Color(0xFFD5DDF7),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
       ),
